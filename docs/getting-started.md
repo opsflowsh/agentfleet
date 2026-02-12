@@ -1,115 +1,124 @@
 # Getting Started with AgentFleet
 
-Welcome to AgentFleet! This guide will help you create your first AI agent team in minutes.
+Welcome to AgentFleet! This guide will help you create and manage your first AI agent team.
 
-## Prerequisites
+## Quick Start
 
-- Node.js 18+ installed
-- OpenClaw CLI (recommended)
-- Basic understanding of AI agents
+### 1. Create Your First Fleet
 
-## Installation
+```typescript
+import { FleetManager } from '@agentfleet/core';
 
-### Method 1: Through OpenClaw (Recommended)
+const manager = new FleetManager();
+const fleet = manager.createFleet('My DevOps Team', 'your-user-id', 'devops');
 
-```bash
-# In your OpenClaw chat
-You: Set up AgentFleet for me
-
-# OpenClaw will handle the installation and configuration
+console.log(`Created fleet with ${fleet.agents.length} agents!`);
 ```
 
-### Method 2: Manual Installation
+### 2. Available Templates
 
-```bash
-# Clone the repository
-git clone https://github.com/opsflowsh/agentfleet
-cd agentfleet
+#### DevOps Fleet
+Perfect for infrastructure and operations teams:
+- **CloudBot**: Kubernetes, Terraform, AWS specialist
+- **SecureBot**: Security scanning and compliance
 
-# Run the install script
-./install.sh
+#### Startup Fleet
+Ideal for rapid product development:
+- **CodeBot**: Full-stack development
+- **DesignBot**: UI/UX and prototyping
 
-# Start the development server
-npm run dev
-```
+### 3. Assign Tasks
 
-## Creating Your First Agent
-
-1. **Open the AgentFleet dashboard**
-   ```
-   http://localhost:3000
-   ```
-
-2. **Click "Create Agent"**
-
-3. **Define your agent:**
-   - **Name**: Give your agent a memorable name
-   - **Role**: What is this agent's specialty?
-   - **Capabilities**: What tools can it use?
-   - **Personality**: How should it communicate?
-
-4. **Save and Deploy**
-
-## Creating Your First Mission
-
-1. **Go to Mission Control**
-
-2. **Click "New Mission"**
-
-3. **Define the mission:**
-   - **Title**: What needs to be done?
-   - **Type**: Research, Create, Analyze, or Build
-   - **Requirements**: Detailed instructions
-   - **Assign Agents**: Select which agents should work on this
-
-4. **Launch Mission**
-
-## Watching Your Agents Work
-
-Once you've launched a mission:
-
-- **Mission Board**: See real-time progress
-- **Agent Chat**: Watch agents coordinate
-- **Artifacts**: View generated outputs
-- **Analytics**: Track performance metrics
-
-## Example: Content Creation Team
-
-```javascript
-// Example agent configuration
-const contentTeam = {
-  agents: [
-    {
-      name: "Researcher",
-      role: "Content Research",
-      capabilities: ["web_search", "summarize"],
-      personality: "Thorough and analytical"
-    },
-    {
-      name: "Writer",
-      role: "Content Creation",
-      capabilities: ["generate_text", "edit"],
-      personality: "Creative and engaging"
-    },
-    {
-      name: "Editor",
-      role: "Content Review",
-      capabilities: ["proofread", "fact_check"],
-      personality: "Detail-oriented and precise"
-    }
-  ]
+```typescript
+const task = {
+  title: 'Deploy monitoring stack',
+  requiredSkills: ['kubernetes', 'monitoring'],
+  priority: 'high'
 };
+
+const assigned = manager.assignTask(fleet.id, task);
 ```
+
+## Architecture Overview
+
+```
+AgentFleet/
+├── Fleet Manager (Core)
+│   ├── Agent orchestration
+│   ├── Task assignment
+│   └── Status tracking
+├── Web UI (React)
+│   ├── Fleet dashboard
+│   ├── Agent cards
+│   └── Task management
+└── Integrations
+    ├── OpenClaw
+    ├── GitHub
+    └── Slack
+```
+
+## Agent Capabilities
+
+Each agent in your fleet has:
+- **Skills**: Domain-specific capabilities
+- **Model**: LLM powering the agent (GPT-4, Claude, etc.)
+- **Status**: active, idle, or error
+- **Concurrent Tasks**: Maximum parallel workload
+
+## Integration Options
+
+### OpenClaw Integration
+Connect your fleet directly to OpenClaw for seamless deployment:
+
+```bash
+openclaw connect --fleet-id your-fleet-id --api-key your-key
+```
+
+### GitHub Integration
+Automatically create issues and PRs:
+
+```yaml
+integrations:
+  github:
+    repo: your-org/your-repo
+    auto-pr: true
+```
+
+### Slack Notifications
+Keep your team updated:
+
+```yaml
+integrations:
+  slack:
+    webhook: https://hooks.slack.com/...
+    channel: '#ai-agents'
+```
+
+## Best Practices
+
+1. **Start Small**: Begin with 2-3 agents and scale up
+2. **Match Skills**: Ensure agents have skills for your tasks
+3. **Monitor Status**: Keep an eye on agent workload
+4. **Iterate**: Refine agent configurations based on results
+
+## Troubleshooting
+
+### Agent Not Picking Up Tasks
+- Check if agent status is 'idle'
+- Verify task skills match agent capabilities
+- Ensure concurrent task limit not reached
+
+### Integration Issues
+- Verify API keys and webhooks
+- Check network connectivity
+- Review integration logs
 
 ## Next Steps
 
-- [Creating Custom Agents](creating-agents.md)
-- [Mission Templates](mission-templates.md)
-- [API Integration](api-reference.md)
-- [Best Practices](best-practices.md)
+- [Advanced Configuration](./advanced-config.md)
+- [Custom Agent Templates](./custom-agents.md)
+- [API Reference](./api-reference.md)
 
-## Need Help?
+---
 
-- 📚 [Full Documentation](https://agentfleet.sh/docs)
-- 💬 [Discord Community](https://discord.gg/agentfleet)
-- 🐛 [Report Issues](https://github.com/opsflowsh/agentfleet/issues)
+Need help? Join our [Discord community](https://discord.gg/agentfleet) or check the [FAQ](./faq.md)!
