@@ -1,8 +1,10 @@
-# AgentFleet
-
-> Build and orchestrate AI agent teams with a visual command center
+# AgentFleet Control Plane
 
 <div align="center">
+
+![AgentFleet Control Plane Banner](./agentfleet-banner.jpg)
+
+> **The Control Plane for AI Agent Orchestration**
 
 [![GitHub stars](https://img.shields.io/github/stars/opsflowsh/agentfleet?style=social)](https://github.com/opsflowsh/agentfleet/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/opsflowsh/agentfleet?style=social)](https://github.com/opsflowsh/agentfleet/network)
@@ -16,12 +18,12 @@
 
 ## What is AgentFleet?
 
-AgentFleet is an open-source platform for building, managing, and orchestrating AI agent teams. Create specialized AI agents, coordinate their work, and watch them collaborate in real-time.
+AgentFleet Control Plane (AFCP) is the official control plane for [OpenClaw](https://openclaw.ai), enabling you to build, deploy, and manage AI agent fleets through a beautiful visual interface. Create specialized AI agents, coordinate their work, and watch them collaborate in real-time.
 
 ### Key Features
 
 - 🤖 **Agent Builder** - Create custom AI agents with unique personalities and skills
-- 📋 **Visual Mission Control** - Drag-and-drop task management for your AI team
+- 📋 **Control Plane Interface** - Visual control plane for managing your AI agent fleet
 - 💬 **Real-time Coordination** - Watch agents communicate and collaborate
 - 🗳️ **Community Features** - Let users vote on what your agents build next
 - 📊 **Analytics Dashboard** - Track performance, costs, and success metrics
