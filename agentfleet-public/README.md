@@ -2,8 +2,17 @@
 
 > Build and orchestrate AI agent teams with a visual command center
 
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/opsflowsh/agentfleet?style=social)](https://github.com/opsflowsh/agentfleet/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/opsflowsh/agentfleet?style=social)](https://github.com/opsflowsh/agentfleet/network)
+[![GitHub issues](https://img.shields.io/github/issues/opsflowsh/agentfleet)](https://github.com/opsflowsh/agentfleet/issues)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-blue)](https://openclaw.ai)
+
+### ⭐ Star us to support the project! ⭐
+
+</div>
 
 ## What is AgentFleet?
 
@@ -113,6 +122,14 @@ MIT - See [LICENSE](LICENSE) for details
 ## Acknowledgments
 
 Built with [OpenClaw](https://openclaw.ai) - The AI agent platform
+
+## Star History
+
+<div align="center">
+
+[![Star History Chart](https://api.star-history.com/svg?repos=opsflowsh/agentfleet&type=Date)](https://star-history.com/#opsflowsh/agentfleet&Date)
+
+</div>
 
 ---
 
