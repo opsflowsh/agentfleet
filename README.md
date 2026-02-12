@@ -106,6 +106,13 @@ cd agentfleet
 - [API Reference](docs/api-reference.md)
 
 ### Frontend Development
+
+#### Control Plane (The Product)
+- [Control Plane Frontend Spec](CONTROL-PLANE-FRONTEND-SPEC.md) - Technical specification with WASM
+- [Control Plane MVP](CONTROL-PLANE-MVP.md) - MVP implementation plan
+- [Control Plane UI Spec](CONTROL-PLANE-UI-SPEC.md) - Detailed UI/UX specification
+
+#### Marketing Site (agentfleet.sh)
 - [Frontend Specification](FRONTEND-SPEC.md) - Comprehensive frontend requirements
 - [Frontend Routes (MVP)](FRONTEND-ROUTES.md) - Simplified version for quick start
 - [Frontend Brief](FRONTEND-BRIEF.md) - Brief for hiring frontend developers
