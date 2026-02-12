@@ -1,4 +1,4 @@
-# AgentFleet Control Plane
+# AgentFleet Control Plane - for OpenClaw (earlier ClawdBot)
 
 <div align="center">
 
@@ -26,9 +26,9 @@
   <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=Features%20Shipped&query=featuresShipped&url=https%3A%2F%2Fagentfleet.sh%2Fapi%2Fstats&style=for-the-badge" alt="Features Shipped">
 </div>
 
-## What is AgentFleet?
+## What is AgentFleet for OpenClaw?
 
-AgentFleet Control Plane (AFCP) is the official control plane for [OpenClaw](https://openclaw.ai), enabling you to build, deploy, and manage AI agent fleets through a beautiful visual interface. Create specialized AI agents, coordinate their work, and watch them collaborate in real-time.
+AgentFleet Control Plane (AFCP) is the unofficial control plane for [OpenClaw](https://openclaw.ai), enabling you to build, deploy, and manage AI agent fleets through a beautiful visual interface. Create specialized AI agents, coordinate their work, and watch them collaborate in real-time.
 
 ### Key Features
 
