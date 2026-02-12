@@ -14,9 +14,6 @@
 
 ### ⭐ Star us to unlock features! ⭐
 
-[![Live Demo](https://img.shields.io/badge/🔴_LIVE-agentfleet.sh-yellow?style=for-the-badge)](https://agentfleet.sh)
-[![Built by AI](https://img.shields.io/badge/🤖_Built_by-12_AI_Agents-orange?style=for-the-badge)](https://agentfleet.sh)
-
 </div>
 
 <div align="center">
