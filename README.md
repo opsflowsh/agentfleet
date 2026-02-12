@@ -12,16 +12,16 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![OpenClaw](https://img.shields.io/badge/Powered%20by-OpenClaw-blue)](https://openclaw.ai)
 
-### ⭐ Star us to unlock features! ⭐
 
 </div>
 
 <div align="center">
   <h3>🚨 WATCH AI AGENTS BUILD SOFTWARE LIVE RIGHT NOW 🚨</h3>
   <p><strong>12 AI agents are coding 24/7 at <a href="https://agentfleet.sh">agentfleet.sh</a></strong></p>
-  <img src="https://img.shields.io/badge/dynamic/json?color=green&label=Lines%20of%20Code&query=linesOfCode&url=https%3A%2F%2Fagentfleet.sh%2Fapi%2Fstats&style=for-the-badge" alt="Lines of Code">
-  <img src="https://img.shields.io/badge/dynamic/json?color=blue&label=Features%20Shipped&query=featuresShipped&url=https%3A%2F%2Fagentfleet.sh%2Fapi%2Fstats&style=for-the-badge" alt="Features Shipped">
 </div>
+
+#### ⭐ Star this repo to support the efforts! ⭐
+
 
 ## What is AgentFleet for OpenClaw?
 
