@@ -105,6 +105,11 @@ cd agentfleet
 - [Mission Control](docs/mission-control.md)
 - [API Reference](docs/api-reference.md)
 
+### Frontend Development
+- [Frontend Specification](FRONTEND-SPEC.md) - Comprehensive frontend requirements
+- [Frontend Routes (MVP)](FRONTEND-ROUTES.md) - Simplified version for quick start
+- [Frontend Brief](FRONTEND-BRIEF.md) - Brief for hiring frontend developers
+
 ## Use Cases
 
 ### Content Creation Team
